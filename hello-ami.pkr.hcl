@@ -8,11 +8,11 @@ packer {
 }
 
 source "amazon-ebs" "hello" {
-  region        = "us-east-1"
+  region        = "us-east-2"
   instance_type = "t2.micro"
 
   # Use your provided Ubuntu AMI
-  source_ami    = "ami-01abb3b5c93add95c"
+  source_ami    = "ami-0198cdf7458a7a932"
 
   ami_name      = "packer-hello-{{timestamp}}"
   ssh_username  = "ubuntu"
